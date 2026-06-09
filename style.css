@@ -195,7 +195,7 @@ body {
 
 @media(max-width:768px){
     .containerMain {
-        background-image: url('image/SantosDelivery_files/Fuego.jpg');
+        background-image: url('SantosDelivery_files/Fuego.jpg');
         align-content: center;
         background-size: cover;
         background-position: bottom;
@@ -231,7 +231,7 @@ body {
 
 .ContainerCards {
 
-     background-image: url('image/SantosDelivery_files/bgContainer.jpg');
+     background-image: url('SantosDelivery_files/bgContainer.jpg');
     background-repeat:repeat;
     background-position: center;
     background-attachment: fixed;
