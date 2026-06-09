@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Delivery</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body bg-dark h-100">
+
+    <header class="navbar navbar-expand-md HEAD  w-100 z-1 d-flex position-fixed justify-content-between">
+
+     <div class="logo d-flex align-items-center gap-2">
+        <img src="image/SantosLogo.jpg" alt="Logo" class="Logo ">
+        Santo´s Food
+    </div>
+
+    <button class="navbar-toggler border-light m-1" type="button" data-bs-toggle="collapse" id="PressKey"  data-bs-target="#menuNav">
+       <!--- <span class="navbar-toggler-icon color-danger"> </span>-->
+       <i class="bi bi-list w-100 text-warning"></i>
+    </button>
+        <!--NAVBAR 768 PX -->
+     <nav class="collapse navbar-collapse CNC navbar-expand-md justify-content-end border-light" id="menuNav">
+
+        <div class="navbar-nav gap-3 text-center ">
+<!--id="linkInicio" -->
+            <a href="#" class="nav-link text-light " >
+              <span class="LinkNavCel w-100"> <i class="bi bi-house-door"></i> Início</span> 
+            </a>
+
+            <a href="#" class="nav-link text-light ">
+              <span class="LinkNavCel">  <i class="bi bi-menu-button-wide"></i> Cardápio</span>
+            </a>
+
+            <a href="#" class="nav-link text-light ">
+                <span class="LinkNavCel"> <i class="bi bi-tag"></i> Promoções</span>
+            </a>
+
+            <a href="#footer" class="nav-link text-light >">
+               <span class="span LinkNavCel"> <i class="bi bi-telephone "></i> Contato</span>
+            </a>
+
+        </div>
+
+    </nav>
+<!--ADICIONAR MAIS CONTAINER -->
+</header>
+
+<main class="container-fluid containerMain">
+<p class="text-promo">Lanche feito na hora faz toda a diferença!
+<br>
+Aqui, cada pedido é preparado no momento, garantindo sabor, qualidade e aquele cheirinho irresistível de comida fresca. Ingredientes selecionados, capricho em cada detalhe e um atendimento pensado para deixar sua experiência ainda melhor. Venha provar o verdadeiro sabor de um lanche feito com dedicação!</p>
+</main>
+<hr class="hr text-warning">
+    <div class="container-fluid ContainerCards"> 
+
+        <div class="card" id="card1" name="card1"> 
+            <img src="image/SantosDelivery_files/Hamburguer.jpg" alt="Hambúrguer" class="card-image">
+            <h2 name="c1" id="c1">X-Burger</h2>
+            <p>Pão, carne, queijo e molho especial.</p>
+            <span>R$ 24,90</span>
+            <span><input type="number" name="Quantity" id="Quantity" min="0" class="form-control w-50" value="0"></span>
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+        </div>
+
+        <div class="card" id="card2">
+            <img src="image/SantosDelivery_files/coxinha.jpg" alt="Coxinha" class="card-image">
+            <h2 name="c2">COXINHA</h2>
+            <p>Massa crocante e muito recheio.</p>
+            <span>R$ 39,90</span>
+            <button onclick="addToCart()">Adicionar</button>
+        </div>
+
+        <div class="card" id="card3">
+            <img src="image/SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <h2>hot-Dog</h2>
+            <p>Porção crocante e sequinha.</p>
+            <span>R$ 18,90</span>
+            <button onclick="addToCart()">Adicionar</button>
+        </div>
+
+        
+        <div class="card" id="card4">
+            <img src="image/SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <h2>hot-Dog</h2>
+            <p>Porção crocante e sequinha.</p>
+            <span>R$ 18,90</span>
+            <button onclick="addToCart()">Adicionar</button>
+        </div>
+
+        
+        <div class="card" id="card5" namne="card5">
+            <img src="image/SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <h2>hot-Dog</h2>
+            <p>Porção crocante e sequinha.</p>
+            <span>R$ 18,90</span>
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+        </div>
+
+            <div class="card" id="card6">
+            <img src="image/SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <h2>hot-Dog</h2>
+            <p>Porção crocante e sequinha.</p>
+            <span>R$ 18,90</span>
+            <button onclick="addToCart()">Adicionar</button>
+        </div>
+
+            <div class="card" id="card7">
+            <img src="image/SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <h2>hot-Dog</h2>
+            <p>Porção crocante e sequinha.</p>
+            <span>R$ 18,90</span>
+            <button onclick="addToCart()">Adicionar</button>
+        </div>
+
+            <div class="card" id="card8">
+            <img src="image/SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <h2>hot-Dog</h2>
+            <p>Porção crocante e sequinha.</p>
+            <span>R$ 18,90</span>
+            <span><input type="number" name="Quantity" id="Quantity2" min="0" class="form-control w-50" value="0"></span>
+
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+        </div>
+
+    </div>
+
+    <span class="span IconFloat" id="iconFloat"><i class="bi bi-basket-fill text-light"></i></span>
+
+<footer class="footer mt-0" id="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            <h2>Santo´s Food</h2>
+            <p>LANCHES FEITOS NA HORA ! <br> SUCURELENTOS E GRELHADOS NO CHURRASCO</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Menu</h3>
+            <a href="#">Hambúrgueres</a>
+            <a href="#">Porções</a>
+            <a href="#">Bebidas</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contato</h3>
+            <p>📞 (11) 99999-9999</p>
+            <p>📍 São Paulo - SP</p>
+            <p><i class="bi bi-instagram"></i> @burgerhouse</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Santo´s Food - Todos os direitos reservados
+    </div>
+
+</footer>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com"></script>
+<script src="scriptado.js"></script>
+</body>
+</html>
