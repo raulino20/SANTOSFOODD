@@ -29,6 +29,10 @@ body {
     border-bottom: 1px solid #ff7b00;
 }
 
+@media(max-width:768px){
+    padding:0.3rem;
+}
+
 @media(max-width:425px){
     .Logo{
         width: 70px;
@@ -37,6 +41,7 @@ body {
     }
 
     .HEAD{
+        padding;0.2rem;
         border-bottom: 1px solid #ff7b00;
     }
 
