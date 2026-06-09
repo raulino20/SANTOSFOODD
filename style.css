@@ -178,6 +178,15 @@ body {
     vertical-align: middle;
 }
 
+@media(max-width:768px){
+    .Logo{
+        width: 80px;
+        height: 80px;
+         border: 2px solid #ff7b00;
+
+    }
+}
+
 @media(max-width:425px){
     .Logo{
         width: 70px;
