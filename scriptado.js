@@ -1,5 +1,4 @@
-    
-    let Arr= [];
+  let Arr= [];
  function addToCart(element) {
 
 
@@ -7,11 +6,12 @@
     let FoodName = element.querySelector(".card h2").textContent;
     let paragraph = element.querySelector(".card p").textContent;
     let Price = element.querySelector(".card span").textContent;
-    //let InputValue = element.querySelector("input").value;
+     let ImgSrc = element.querySelector('.card img').src
     let Quantity = element.querySelector("input").value;
 
 
     if (Quantity <= 0) {
+
         alert("Por favor, insira uma quantidade válida.");
         return;
     }
@@ -19,14 +19,15 @@
         FoodName: FoodName,
         Description: paragraph,
         Price: Price,
-        Quantity: Quantity
+        Quantity: Quantity,
+        ImgSrc: ImgSrc
     }
  Arr.push(UserChoice);
     
 let i =''; 
   Arr.forEach(UserChoice => {
     
-    i += `Produto: ${UserChoice.FoodName}, Descrição: ${UserChoice.Description}, Preço: ${UserChoice.Price}\n, Quantidade: ${UserChoice.Quantity}\n`;
+    i += `Produto: ${UserChoice.FoodName}, Descrição: ${UserChoice.Description}, Preço: ${UserChoice.Price}\n, Quantidade: ${UserChoice.Quantity} IMG ${UserChoice.ImgSrc}\n`;
     return i;
   })
 
@@ -34,8 +35,27 @@ let i ='';
     console.log(Arr);
     
 
-    return Arr;
   
+
+    let Sucess = document.createElement('div')
+    Sucess.classList.add('alert', 'alert-success')
+    Sucess.innerText = 'PEDIDO ADICIONADO AO CARRINHO'
+    Sucess.style.width = '100%'
+    Sucess.style.height = 'auto'
+    Sucess.style.display = 'block'
+    Sucess.style.textAlign = 'center'
+    Sucess.style.fontSize = '20px'
+    Sucess.style.position = 'fixed'
+    Sucess.style.top = '0'
+    Sucess.style.zIndex = '9999'
+
+   document.body.appendChild(Sucess)
+
+   setTimeout(() => {
+    Sucess.remove();
+}, 2500);
+
+    return Arr;
 }
 
 
@@ -56,6 +76,7 @@ break;
 
    
     Div.classList.add("cart");
+    Div.style.display = 'column'
     Div.style.position = "fixed";
     Div.style.top = "50px";
     Div.style.marginTop = "20px";
@@ -65,9 +86,17 @@ break;
     Div.style.border = "1px solid #ed6125";
     Div.style.padding = "20px";
     Div.style.color = "#333";
-    Div.textContent = "Carrinho de Compras"; 
+
+    let H4 = document.createElement('h4')
+    H4.innerText =  'Carrinho de Compras'
+    H4.style.textAlign = 'Center'
+    H4.style.backgroundColor = 'orange'
+    H4.style.textDecoration = 'underline'
+    H4.style.margin='0 auto'
+    H4.style.width ='100%'
+
+Div.appendChild(H4)
     
-       
 
 
    
@@ -76,31 +105,53 @@ break;
     Ul = document.createElement("ul");
     Ul.classList.add("list-group");
 
-
   Arr.forEach(UserChoice => {
 
-  Icon = document.createElement('i')
-  Icon.classList.add("bi", "bi-search");
- 
+    LB =document.createElement('label')
+
+  let Finalizar = document.createElement('button')
+  Finalizar.type ='submit'
+  Finalizar.innerText = 'Fazer Pedido'
+  Finalizar.style.bottom = '0'
+  Finalizar.classList.add('btn','btn-success')
 
   Li = document.createElement("li");
-  Li.classList.add("list-group-item");
+  Li.classList.add('list-group-item')
+  Li.style.display = 'flex'
 
-    Li.innerText = `${Icon} Produto: ${ UserChoice.FoodName},\n Descrição: ${UserChoice.Description}, Preço: ${UserChoice.Price}\n, Quantidade: ${UserChoice.Quantity}`;
-  
- Ul.appendChild(Li);
-  })
+  let Montagem = document.createElement('img')
+  Montagem.src = UserChoice.ImgSrc
+  Montagem.style.width= '100%'
+  Montagem.style.height = '100%'
 
 
+  Card = document.createElement('div')
+  Card.classList.add('Card')
+  Card.style.width ='80px'
+  Card.style.height='80px'
+ 
 
-    MiniDiv.style.backgroundColor = "gray";
+    LB.innerHTML = `<i class="bi bi-clipboard"></i> Produto: ${ UserChoice.FoodName},</br> <i class="bi bi-list-task"></i> Descrição:  ${UserChoice.Description} </br> <i class="bi bi-currency-dollar"></i> Preço: ${UserChoice.Price} <br> Quantidade: ${UserChoice.Quantity} `;   
+ 
+    Ul.appendChild(Li)  
+    Li.appendChild(LB)
+    Li.appendChild(Card)
+    Card.appendChild(Montagem)
+    Div.appendChild(Finalizar)
+    LB.style.display= 'blcok'
+
+})
+
+
+ 
+    MiniDiv.style.backgroundColor = "#f3f3f3f";
     MiniDiv.style.display = "block";
  
+   
     document.body.appendChild(Div);
     Div.appendChild(MiniDiv);
-    MiniDiv.appendChild(Ul);
-    document.body.appendChild(Div);
-    
+    MiniDiv.appendChild(Ul); 
+   
 
     
     console.log(Arr)
@@ -108,12 +159,6 @@ break;
     
 })
 
-/*document.getElementById("PressKey").addEventListener("click", function() {
-
-  CNC.setAttribute( 'show', ' d-block');
-
-})
-*/
 let CloseBtn = document.querySelectorAll(".LinkNavCel");
 
 CloseBtn.forEach(btn => {
