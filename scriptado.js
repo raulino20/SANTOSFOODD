@@ -1,4 +1,5 @@
-  let Arr= [];
+    
+    let Arr= [];
  function addToCart(element) {
 
 
@@ -109,12 +110,6 @@ Div.appendChild(H4)
 
     LB =document.createElement('label')
 
-  let Finalizar = document.createElement('button')
-  Finalizar.type ='submit'
-  Finalizar.innerText = 'Fazer Pedido'
-  Finalizar.style.bottom = '0'
-  Finalizar.classList.add('btn','btn-success')
-
   Li = document.createElement("li");
   Li.classList.add('list-group-item')
   Li.style.display = 'flex'
@@ -137,11 +132,16 @@ Div.appendChild(H4)
     Li.appendChild(LB)
     Li.appendChild(Card)
     Card.appendChild(Montagem)
-    Div.appendChild(Finalizar)
+    //Div.appendChild(Finalizar)
     LB.style.display= 'blcok'
 
 })
 
+  let Finalizar = document.createElement('button')
+  Finalizar.type ='submit'
+  Finalizar.innerText = 'Fazer Pedido'
+  Finalizar.style.bottom = '0'
+  Finalizar.classList.add('btn','btn-success')
 
  
     MiniDiv.style.backgroundColor = "#f3f3f3f";
@@ -150,6 +150,7 @@ Div.appendChild(H4)
    
     document.body.appendChild(Div);
     Div.appendChild(MiniDiv);
+    Div.appendChild(Finalizar)
     MiniDiv.appendChild(Ul); 
    
 
