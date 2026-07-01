@@ -10,10 +10,10 @@
 </head>
 <body class="body bg-dark h-100">
 
-    <header class="navbar navbar-expand-md HEAD  w-100 z-1 d-flex position-fixed justify-content-between">
+    <header class="navbar navbar-expand-md HEAD  w-100 d-flex position-fixed justify-content-between">
 
      <div class="logo d-flex align-items-center gap-2">
-        <img src="SantosDelivery_files/SantosLogo.jpg" alt="Logo" class="Logo ">
+        <img src="image/Santosfiles/SANTOSFOODICON.jpg" alt="Logo" class="Logo">
         Santo´s Food
     </div>
 
@@ -26,27 +26,29 @@
 
         <div class="navbar-nav gap-3 text-center ">
 <!--id="linkInicio" -->
-            <a href="#" class="nav-link text-light " >
+            <a href="#" class="nav-link text-light "onclick="CloseNav()" >
               <span class="LinkNavCel w-100"> <i class="bi bi-house-door"></i> Início</span> 
             </a>
 
-            <a href="#" class="nav-link text-light ">
+            <a href="#Menu" class="nav-link text-light " onclick="CloseNav()">
               <span class="LinkNavCel">  <i class="bi bi-menu-button-wide"></i> Cardápio</span>
             </a>
 
-            <a href="#" class="nav-link text-light ">
+            <a href="#" class="nav-link text-light " onclick="CloseNav()">
                 <span class="LinkNavCel"> <i class="bi bi-tag"></i> Promoções</span>
             </a>
 
-            <a href="#footer" class="nav-link text-light >">
+            <a href="#footer" class="nav-link text-light " onclick="CloseNav()"  >
                <span class="span LinkNavCel"> <i class="bi bi-telephone "></i> Contato</span>
             </a>
 
         </div>
 
-    </nav>
+    </nav>    
+
 <!--ADICIONAR MAIS CONTAINER -->
 </header>
+    <div class="cart collapse navbar-collapse navbar-expand-md" id="storage"> </div>
 
 <main class="container-fluid containerMain">
 <p class="text-promo">Lanche feito na hora faz toda a diferença!
@@ -54,85 +56,103 @@
 Aqui, cada pedido é preparado no momento, garantindo sabor, qualidade e aquele cheirinho irresistível de comida fresca. Ingredientes selecionados, capricho em cada detalhe e um atendimento pensado para deixar sua experiência ainda melhor. Venha provar o verdadeiro sabor de um lanche feito com dedicação!</p>
 </main>
 <hr class="hr text-warning">
+
+<div class="container-fluid CarrossselDiv" id="Menu">
+
+    <ul class="list-group CarrosselEscolhas ">
+
+        <li class="list-group-item CAR">Lanhes</li>
+
+        <li class="list-group-item CAR">Pateis</li>
+
+        <li class="list-group-item CAR">Almoço</li>
+
+        <li class="list-group-item CAR">Batata</li>
+
+       <i class="bi bi-arrow-right-circle-fill HOVER"></i>
+    </ul>
+</div>
     <div class="container-fluid ContainerCards"> 
 
         <div class="card" id="card1" name="card1"> 
-            <img src="SantosDelivery_files/Hamburguer.jpg" alt="Hambúrguer" class="card-image">
+            <img src="image/SantosFiles/Ham3.jpg" alt="Hambúrguer" class="w-100" id="img1">
             <h2 name="c1" id="c1">X-Burger</h2>
             <p>Pão, carne, queijo e molho especial.</p>
-            <span>R$ 24,90</span>
-            <span><input type="number" name="Quantity1" id="Quantity1" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
+            <span id="Preco1" data-preco="24,90" class="Preco">R$ 24,90</span>
+            <span><input type="number" name="Quantity" id="Quantity1" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
             <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
         <div class="card" id="card2">
-            <img src="SantosDelivery_files/coxinha.jpg" alt="Coxinha" class="card-image" id='img1'>
-            <h2 name="c2">COXINHA</h2>
+            <img src="image/SantosFiles/coxinha.jpg" alt="Coxinha" class="w-100">
+            <h2 name="c2" id="c2">COXINHA</h2>
             <p>Massa crocante e muito recheio.</p>
-            <span>R$ 39,90</span>
-            <span><input type="number" name="Quantity1" id="Quantity2" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
-            <button onclick="addToCart()">Adicionar</button>
+            <span name="Preco2" class="preco" data-preco="39,90">R$ 39,90</span>
+             <span ><input type="number" name="Quantity" id="Quantity2" placeholder="0" min="0" controls class="form-control w-50" value=""></span>
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
         <div class="card" id="card3">
-            <img src="SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <img src="image/Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
             <h2>hot-Dog</h2>
             <p>Porção crocante e sequinha.</p>
-            <span>R$ 18,90</span>
-            <span><input type="number" name="Quantity1" id="Quantity3" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
-            <button onclick="addToCart()">Adicionar</button>
+            <span id="Preco3" data-preco="39,90">R$ 18,90</span>
+            <span ><input type="number" name="Quantity" id="Quantity3" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
         
         <div class="card" id="card4">
-            <img src="SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <img src="image/Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
             <h2>hot-Dog</h2>
             <p>Porção crocante e sequinha.</p>
-            <span>R$ 18,90</span>
-             <span><input type="number" name="Quantity1" id="Quantity4" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
-            <button onclick="addToCart()">Adicionar</button>
+            <span name="Preco4" data-preco="39,90">R$ 18,90</span>
+             <span ><input type="number" name="Quantity" id="Quantity4" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
         
         <div class="card" id="card5" namne="card5">
-            <img src="SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <img src="image/SantosFiles/dog.jpg" alt="Hot Dog" class="w-100">
             <h2>hot-Dog</h2>
             <p>Porção crocante e sequinha.</p>
-            <span>R$ 18,90</span>
-            <span><input type="number" name="Quantity1" id="Quantity5" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
+            <span name="Preco5" data-preco="39,90">R$ 18,90</span>
+            <span><input type="number" name="Quantity" id="Quantity5" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
             <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
             <div class="card" id="card6">
-            <img src="SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <img src="image/SantosFiles/dog.jpg" alt="Hot Dog" class="w-100">
             <h2>hot-Dog</h2>
             <p>Porção crocante e sequinha.</p>
-            <span>R$ 18,90</span>
-          <span><input type="number" name="Quantity1" id="Quantity6" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
-            <button onclick="addToCart()">Adicionar</button>
+            <span name="Preco6" data-preco="39,90">R$ 18,90</span>
+            <span><input type="number" name="Quantity" id="Quantity6" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
             <div class="card" id="card7">
-            <img src="SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <img src="image/SantosFiles/dog.jpg" alt="Hot Dog" class="w-100">
             <h2>hot-Dog</h2>
             <p>Porção crocante e sequinha.</p>
-            <span>R$ 18,90</span>
-             <span><input type="number" name="Quantity1" id="Quantity7" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
-            <button onclick="addToCart()">Adicionar</button>
+            <span name="Preco7" data-preco="18,90">R$ 18,90</span>
+            <span><input type="number" name="Quantity" id="Quantity7" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
             <div class="card" id="card8">
-            <img src="SantosDelivery_files/dog.jpg" alt="Hot Dog" class="card-image">
+            <img src="image/SantosFiles/dog.jpg" alt="Hot Dog" class="w-100">
             <h2>hot-Dog</h2>
             <p>Porção crocante e sequinha.</p>
-            <span>R$ 18,90</span>
-            <span><input type="number" name="Quantity" id="Quantity8" min="0" class="form-control w-50" value="" placeholder="quantidade"></span>
+            <span name="Preco9" data-preco="18,90">R$ 18,90</span>
+            <span><input type="number" name="Quantity" id="Quantity8" min="0" placeholder="0" class="form-control w-50" value="0"></span>
+
             <button onclick="addToCart(this.parentNode)">Adicionar</button>
         </div>
 
     </div>
 
-    <span class="span IconFloat" id="iconFloat"><i class="bi bi-basket-fill text-light"></i></span>
+    <span class="span IconFloat d-flex p-3 flex-row" id="iconFloat" data-bs-target="#storage" data-bs-toggle="collapse" ><i class="bi bi-basket-fill text-light" id="On"></i> <i class="bi bi-x-circle-fill text-light d-none" id="Exit"></i> <p class="span" id="NumList">0</p></span>
+  <!-- <div class="cart collapse navbar-collapse navbar-expand-md" id="storage"> </div>--> 
 
 <footer class="footer mt-0" id="footer">
 
@@ -154,7 +174,7 @@ Aqui, cada pedido é preparado no momento, garantindo sabor, qualidade e aquele 
             <h3>Contato</h3>
             <p>📞 (11) 99999-9999</p>
             <p>📍 São Paulo - SP</p>
-            <p><i class="bi bi-instagram"></i> @Santo´s Food</p>
+            <p> <i class="bi bi-instagram"></i> Santo´s Food</p>
         </div>
 
     </div>
