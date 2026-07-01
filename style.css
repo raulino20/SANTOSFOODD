@@ -208,7 +208,7 @@ body {
 
 @media(max-width:768px){
     .containerMain {
-        background-image: url('image/Santosfiles/Fuego.jpg');
+        background-image: url('Santosfiles/Fuego.jpg');
         align-content: center;
         background-size: cover;
         background-position: bottom;
