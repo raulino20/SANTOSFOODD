@@ -166,7 +166,7 @@ document.getElementById("iconFloat").addEventListener("click", function() {
 
         let Empty = document.createElement("img");
 
-        Empty.src = "/image/Santosfiles/Carrinhovazio.png";
+        Empty.src = "Santosfiles/Carrinhovazio.png";
         Empty.style.width = "150px";
         Empty.style.height = "150px";
         Empty.style.display = "block";
