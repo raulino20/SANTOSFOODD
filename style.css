@@ -334,6 +334,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     height: max-content;
+     scrollbar-color: #ff7b00 #000000;
+    scrollbar-width:  inherit;
     display: flex;
     justify-content: center;
     gap: 20px;
