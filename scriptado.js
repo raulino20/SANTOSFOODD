@@ -258,7 +258,6 @@ if(Arr.length <= 0){
 alert('Não há itens para serem descartados')
 
 }else{
-  alert('tem')
 
 let Eclusão = confirm('Todos os itens serão excluidos, deseja continuar ?')
   
