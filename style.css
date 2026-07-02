@@ -264,7 +264,7 @@ body {
     flex-direction: row;
     overflow-x: scroll;
  }
-
+}
 
 
  .HOVER{
@@ -308,7 +308,6 @@ body {
 
     border-end-end-radius: 20px;
     border-top-left-radius: 20px;
-    
     margin-right: 3rem; 
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -325,7 +324,6 @@ body {
     margin-bottom: 1rem;
 
 }
-}
 
 .ContainerCards {
 
@@ -334,7 +332,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     height: max-content;
-     scrollbar-color: #ff7b00 #000000;
+    scrollbar-color: #ff7b00 #000000;
     scrollbar-width:  inherit;
     display: flex;
     justify-content: center;
