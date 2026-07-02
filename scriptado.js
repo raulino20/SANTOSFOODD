@@ -287,6 +287,7 @@ if(Eclusão){
 
   console.warn('Itens descartados')
   Div.classList.remove('show')
+  location.reload()
   }
  }
 })
