@@ -309,7 +309,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
         ///    const mensagem = ''
             
             // Formata a mensagem que será enviada
-            const textoCompleto = `Olá, ${'Usuario'}. Informações adicionais:. Segue o pedido:\n\n${Resultado}`;
+            const textoCompleto = `Olá Usuario, Informações adicionais:. Segue o pedido:\n\n${Resultado}`;
             
             // Codifica o texto para formato de URL
          //   const urlEncoded = encodeURIComponent(textoCompleto);
