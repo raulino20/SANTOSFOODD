@@ -309,13 +309,13 @@ let Total = Arr.reduce((Soma,UserChoice) => {
         ///    const mensagem = ''
         
             // Formata a mensagem que será enviada
-          const textoCompleto = `Olá Usuario, Informações adicionais:. Segue o pedido:\n\n${Resultado}`;
+       //   const textoCompleto = `Olá Usuario, Informações adicionais:. Segue o pedido:\n\n${Resultado}`;
             
             // Codifica o texto para formato de URL
          //   const urlEncoded = encodeURIComponent(textoCompleto);
             
             // Monta o link final da API do WhatsApp
-            const urlWhatsApp = `https://wa.me/${5511965404572}?text=${TextoCompleto}`;
+            const urlWhatsApp = `https://wa.me/${5511965404572}?text=${Resultado}`;
             
             // Abre o WhatsApp com o link formatado
             window.open(urlWhatsApp, '_blank');
