@@ -232,6 +232,7 @@ document.getElementById("iconFloat").addEventListener("click", function() {
 
   let Finalizar = document.createElement('button')
   Finalizar.type ='submit'
+  Finalizar.id="Finalizar'
   Finalizar.innerText = 'Fazer Pedido'
   Finalizar.style.bottom = '0'
   Finalizar.classList.add('btn','btn-success')
@@ -251,6 +252,38 @@ let Total = Arr.reduce((Soma,UserChoice) => {
     Div.appendChild(Finalizar)
     Div.appendChild(Xbtn)
 
+
+  Finalizar.addEventListener('click',function(){
+    if(Arr.length <= 0){
+      alert('Não há itens para finalizar o pedido')
+    }else{
+    let  Resultado = this.parentElement.innerText
+
+    
+
+   // function enviarWhatsApp(Finalizar) {
+            // Substitua pelo número de telefone desejado (com código do país e DDD, sem símbolos)
+            const numeroTelefone = "5511965404572"; 
+            
+            // Captura os valores digitados nos inputs
+            const nome = 'Humano'
+            const mensagem = ''
+            
+            // Formata a mensagem que será enviada
+            const textoCompleto = `Olá, ${nome}. Informações adicionais: ${mensagem}. Segue o pedido:\n\n${Resultado}`;
+            
+            // Codifica o texto para formato de URL
+            const urlEncoded = encodeURIComponent(textoCompleto);
+            
+            // Monta o link final da API do WhatsApp
+            const urlWhatsApp = `https://whatsapp.com/${numeroTelefone}?text=${urlEncoded}`;
+            
+            // Abre o WhatsApp com o link formatado
+            window.open(urlWhatsApp, '_blank');
+     }
+   // }
+  })
+  
    /////////// APAGA ITENS DO CARRINHO ///////////////////// 
    
 Xbtn.addEventListener('click',function(){
