@@ -272,7 +272,7 @@ document.getElementById("iconFloat").addEventListener("click", function() {
 
   let Finalizar = document.createElement('button')
   Finalizar.type ='submit'
-  Finalizar.id="Finalizar"
+  Finalizar.id='Finalizar'
   Finalizar.innerText = 'Fazer Pedido'
   Finalizar.style.bottom = '0'
   Finalizar.classList.add('btn','btn-success')
