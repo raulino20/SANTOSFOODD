@@ -269,7 +269,6 @@ document.getElementById("iconFloat").addEventListener("click", function() {
     Div.appendChild(Ul);
     
 
-
   let Finalizar = document.createElement('button')
   Finalizar.type ='submit'
   Finalizar.id='Finalizar'
