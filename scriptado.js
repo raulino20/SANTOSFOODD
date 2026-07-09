@@ -1,3 +1,43 @@
+AOS.init();
+
+/// HAMBURGUER
+let HAM = document.getElementById('Ham')
+HAM.addEventListener('click',function(){
+    let Div1 = document.getElementById('sessionP')
+    let Div2 = document.getElementById('sessionL')
+
+    Div1.classList.add('d-none')
+    Div2.classList.remove('d-none')
+    Div2.classList.add('d-block')
+})
+
+
+
+/// PASTEIS
+let Switch = document.getElementById('Switch')
+
+Switch.addEventListener('click',function(){
+let Div1 = document.getElementById('sessionP')
+let Div2 = document.getElementById('sessionL')
+
+
+Div2.classList.remove('d-block')
+Div2.classList.add('d-none')
+Div1.classList.remove('d-none')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function CloseNav(){
   let Nav = document.getElementById('menuNav')
