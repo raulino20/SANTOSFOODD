@@ -315,7 +315,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
             const urlEncoded = encodeURIComponent(textoCompleto);
             
             // Monta o link final da API do WhatsApp
-            const urlWhatsApp = `https://whatsapp.com/${numeroTelefone}?text=${urlEncoded}`;
+            const urlWhatsApp = `https://wa.me/${numeroTelefone}?text=${urlEncoded}`;
             
             // Abre o WhatsApp com o link formatado
             window.open(urlWhatsApp, '_blank');
