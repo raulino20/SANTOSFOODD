@@ -302,20 +302,20 @@ let Total = Arr.reduce((Soma,UserChoice) => {
 
    // function enviarWhatsApp(Finalizar) {
             // Substitua pelo número de telefone desejado (com código do país e DDD, sem símbolos)
-            const numeroTelefone = "5511965404572"; 
+           // const numeroTelefone = "5511965404572"; 
             
             // Captura os valores digitados nos inputs
-            const nome = 'Humano'
-            const mensagem = ''
+        //    const nome = 'Humano'
+        ///    const mensagem = ''
             
             // Formata a mensagem que será enviada
             const textoCompleto = `Olá, ${nome}. Informações adicionais: ${mensagem}. Segue o pedido:\n\n${Resultado}`;
             
             // Codifica o texto para formato de URL
-            const urlEncoded = encodeURIComponent(textoCompleto);
+         //   const urlEncoded = encodeURIComponent(textoCompleto);
             
             // Monta o link final da API do WhatsApp
-            const urlWhatsApp = `https://wa.me/${numeroTelefone}?text=${urlEncoded}`;
+            const urlWhatsApp = `https://wa.me/${5511965404572}?text=${TextoCompleto}`;
             
             // Abre o WhatsApp com o link formatado
             window.open(urlWhatsApp, '_blank');
