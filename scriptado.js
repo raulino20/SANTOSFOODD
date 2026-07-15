@@ -299,7 +299,6 @@ let Total = Arr.reduce((Soma,UserChoice) => {
     if(Arr.length <= 0){
       alert('Não há itens para finalizar o pedido')
     }else{
-let Valores = Arr.reduce()
         
     let Lanche = Arr.map(UserChoice => {
         return `Produto: ${UserChoice.FoodName},%0A Descrição: ${UserChoice.Description},%0A Preço : ${UserChoice.Price},%0A Quantidade: ${UserChoice.Quantity},%0A VALOR: ${UserChoice.Total} %0A %0A ${Valor}`;
