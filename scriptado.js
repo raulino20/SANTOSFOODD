@@ -297,10 +297,10 @@ let Total = Arr.reduce((Soma,UserChoice) => {
       alert('Não há itens para finalizar o pedido')
     }else{
     let Lanche = Arr.map(UserChoice => {
-        return `Produto: ${UserChoice.FoodName},\m Descrição: ${UserChoice.Description},\n Preço: ${UserChoice.Price},\n Quantidade: ${UserChoice.Quantity},\n VALOR: ${UserChoice.Total} \n\n`;
+        return `Produto: ${UserChoice.FoodName},%0A Descrição: ${UserChoice.Description},%0A Preço: ${UserChoice.Price},%0A Quantidade: ${UserChoice.Quantity},%0A VALOR: ${UserChoice.Total} %0A %0A`;
       });
       console.log(Lanche)
-      console.log(Lanche.join('\n'));
+      console.log(Lanche.join('%0A'));
 
         
     let  Resultado = Lanche
