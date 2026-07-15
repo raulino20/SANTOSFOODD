@@ -279,6 +279,9 @@ document.getElementById("iconFloat").addEventListener("click", function() {
 let Total = Arr.reduce((Soma,UserChoice) => {
   return Soma + (UserChoice.Price * UserChoice.Quantity)
 },0)
+    
+///// ARRUMAR VALOR FINAL NO WHATSAPP ////////
+
 
   let Valor = document.createElement('h3')
   Valor.innerText = `TOTAL : R$ ${Total.toFixed(2)}` 
@@ -296,8 +299,10 @@ let Total = Arr.reduce((Soma,UserChoice) => {
     if(Arr.length <= 0){
       alert('Não há itens para finalizar o pedido')
     }else{
+let Valores = Arr.reduce()
+        
     let Lanche = Arr.map(UserChoice => {
-        return `Produto: ${UserChoice.FoodName},%0A Descrição: ${UserChoice.Description},%0A Preço: ${UserChoice.Price},%0A Quantidade: ${UserChoice.Quantity},%0A VALOR: ${UserChoice.Total} %0A %0A`;
+        return `Produto: ${UserChoice.FoodName},%0A Descrição: ${UserChoice.Description},%0A Preço: ${UserChoice.Price},%0A Quantidade: ${UserChoice.Quantity},%0A VALOR: ${UserChoice.Total} %0A %0A ${Soma}`;
       });
       console.log(Lanche)
       console.log(Lanche.join('%0A'));
