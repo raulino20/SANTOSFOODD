@@ -301,7 +301,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
     }else{
         
     let Lanche = Arr.map(UserChoice => {
-        return `🍔 Produto: ${UserChoice.FoodName},%0A📝 Descrição: ${UserChoice.Description},%0A💲 Preço(UNI) : ${UserChoice.Price},%0A🔢 Quantidade: ${UserChoice.Quantity},%0A💵 Valor: ${UserChoice.Total} %0A %0A💰 VALOR TOTAL: ${Total.toFixed(2)} %0A`;
+        return `🍔 Produto: ${UserChoice.FoodName},%0A📝 Descrição: ${UserChoice.Description},%0A💲 Preço(UNI) : ${UserChoice.Price},%0A🔢 Quantidade: ${UserChoice.Quantity},%0A💵 Valor: ${UserChoice.Total} %0A %0A`;
       });
       console.log(Lanche)
       console.log(Lanche.join('%0A'));
@@ -309,7 +309,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
         
     let  Resultado = Lanche
 
-    
+    // VALOR TOTAL: ${Total.toFixed(2)} %0A
 
    // function enviarWhatsApp(Finalizar) {
             // Substitua pelo número de telefone desejado (com código do país e DDD, sem símbolos)
@@ -326,7 +326,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
          //   const urlEncoded = encodeURIComponent(textoCompleto);
             
             // Monta o link final da API do WhatsApp
-            const urlWhatsApp = `https://wa.me/${5511965404572}?text=${Resultado}`;
+            const urlWhatsApp = `https://wa.me/${5511965404572}?text=${Resultado,  %0A  💰 VALOR TOTAL: ${Total.toFixed(2)} %0A}`;
             
             // Abre o WhatsApp com o link formatado
             window.open(urlWhatsApp, '_blank');
