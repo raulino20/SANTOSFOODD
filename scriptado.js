@@ -12,7 +12,6 @@ HAM.addEventListener('click',function(){
 })
 
 
-
 /// PASTEIS
 let Switch = document.getElementById('Switch')
 
