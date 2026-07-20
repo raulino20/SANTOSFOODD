@@ -283,7 +283,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
 
 
   let Valor = document.createElement('h3')
-  Valor.innerText = `TOTAL : R$ ${Total.toFixed(2)}` 
+  Valor.innerText = `TOTAL : R$ ${Total.toFixed(3)}` 
   Valor.style.marginTop='0.5rem'
   Valor.style.marginBottom = '0.5rem'
   Valor.style.marginLeft='1rem'
