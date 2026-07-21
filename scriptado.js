@@ -61,7 +61,7 @@ function CloseNav(){
 //      .replace(',','.')
 //      .trim()
     
-    )
+    
    let IconFloat = document.getElementById('iconFloat')
 //    let ImgSrc = element.querySelector('.card img').src
 //    let Quantity = element.querySelector("input").value;
