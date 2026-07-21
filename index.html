@@ -79,15 +79,16 @@ Aqui, cada pedido é preparado no momento, garantindo sabor, qualidade e aquele 
     
     <div class="container-fluid ContainerCards" id="sessionL"> 
 
-        <div class="card" id="card1" name="card1"> 
+        <div class="card" id="card1" name="card1">
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
             <img src="Santosfiles/COMBO.jpg" alt="Hambúrguer" class="w-100" id="img1">
-            <h2 name="c1" id="c1">X-Burger</h2>
+            <h2 name="c1" class="h2" id="c1">X-Burger</h2>
             <p>Pão, carne, queijo e molho especial.</p>
             <span id="Preco1" data-preco="24,90" class="Preco">R$ 24,90</span> 
-            <form class="form-control FazerPedido" >
-              <span><input type="number" name="Quantity" id="Quantity1" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            
+              <input type="number" name="Quantity" id="Quantity1" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+            <button type="submit">Adicionar</button>
         </div>
 
         <div class="card" id="card2">
