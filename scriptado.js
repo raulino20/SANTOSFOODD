@@ -60,7 +60,7 @@ function CloseNav(){
 //      .replace("R$","")
 //      .replace(',','.')
 //      .trim()
-    
+ //   
     
    let IconFloat = document.getElementById('iconFloat')
 //    let ImgSrc = element.querySelector('.card img').src
