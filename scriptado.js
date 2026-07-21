@@ -105,7 +105,7 @@ function CloseNav(){
   }) 
 
    form.querySelector("input").value = ''
-   
+  /// 
  //////////// PEDIDO DESCARTADO //////////////////////
 console.log(i)
   let Choice = confirm(i);
