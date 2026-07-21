@@ -49,23 +49,35 @@ function CloseNav(){
     let Arr= [];     
     let Indice = document.getElementById('NumList')
 
- function addToCart(element) {
+ function addToCart(form) {
 
    // let item = document.getElementById(document.getElementsByName('card1')[0]);
-    let FoodName = element.querySelector(".card h2").textContent;
-    let paragraph = element.querySelector(".card p").textContent;
-    let Price = element.querySelector(".card span").textContent;
-    Price = parseFloat(
-      Price
-      .replace("R$","")
-      .replace(',','.')
-      .trim()
+  //  let FoodName = element.querySelector(".card h2").textContent;
+  //  let paragraph = element.querySelector(".card p").textContent;
+  //  let Price = element.querySelector(".card span").textContent;
+ //   Price = parseFloat(
+//      Price
+//      .replace("R$","")
+//      .replace(',','.')
+//      .trim()
     
     )
-    let IconFloat = document.getElementById('iconFloat')
-    let ImgSrc = element.querySelector('.card img').src
-    let Quantity = element.querySelector("input").value;
-   
+   let IconFloat = document.getElementById('iconFloat')
+//    let ImgSrc = element.querySelector('.card img').src
+//    let Quantity = element.querySelector("input").value;
+       
+    let FoodName = form.querySelector("h2").textContent;
+    let paragraph = form.querySelector("p").textContent;
+    let Price = form.querySelector("span").textContent;
+     Price = parseFloat(
+    Price
+    .replace("R$","")
+    .replace(',','.')
+    .trim()
+  )
+
+    let ImgSrc = form.querySelector("img").src;
+    let Quantity = form.querySelector("input").value;
 
 
     if (Quantity <= 0) {
