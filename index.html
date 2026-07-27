@@ -92,82 +92,83 @@ Aqui, cada pedido é preparado no momento, garantindo sabor, qualidade e aquele 
         </div>
 
         <div class="card" id="card2">
-            <img src="Santosfiles/Ham2.jpg" alt="Double" class="w-100">
-            <h2 name="c2" id="c2">Double-X</h2>
-            <p>Massa crocante e muito recheio.</p>
-            <span name="Preco2" class="preco" data-preco="39,90">R$ 39,90</span>
-            <form class="form-control" id="">
-              <span ><input type="number" name="Quantity" id="Quantity2" placeholder="0" min="0" controls class="form-control w-50" value=""></span>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >    
+                <img src="Santosfiles/Ham2.jpg" alt="Double" class="w-100">
+                <h2 name="c2" id="c2">Double-X</h2>
+                <p>Massa crocante e muito recheio.</p>
+                <span name="Preco2" class="preco" data-preco="39,90">R$ 39,90</span>
+                <input type="number" name="Quantity" id="Quantity2" placeholder="0" min="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button type="submit">Adicionar</button>
         </div>
 
         <div class="card" id="card3">
-            <img src="Santosfiles/Ham3.jpg" alt="HAmG" class="w-100">
-            <h2>Hamburguer gg</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span id="Preco3" data-preco="39,90">R$ 18,90</span>
-           <form class="form-control  FazerPedido" >
-               <span<input type="number" name="Quantity" id="Quantity3" min="0" placeholder="0" controls class="form-control w-50" value="">></span> 
-           </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+            
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/Ham3.jpg" alt="HAmG" class="w-100">
+                    <h2>Hamburguer gg</h2>
+                    <p>Porção crocante e sequinha.</p>
+                    <span id="Preco3" data-preco="39,90">R$ 18,90</span>
+                    <input type="number" name="Quantity" id="Quantity3" min="0" placeholder="0" controls class="form-control w-50" value="">
+             </form>
+                <button  type="submit"">Adicionar</button>
         </div>
 
         
         <div class="card" id="card4">
-            <img src="Santosfiles/Ham.jpg" alt="Picanha" class="w-100">
-            <h2>Double Picanha</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco4" data-preco="39,90">R$ 18,90</span>
-            <form class="form-control  FazerPedido">
-                 <span ><input type="number" name="Quantity" id="Quantity4" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
-            </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/Ham.jpg" alt="Picanha" class="w-100">
+                <h2>Double Picanha</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco4" data-preco="39,90">R$ 18,90</span>
+                <input type="number" name="Quantity" id="Quantity4" min="0" placeholder="0" controls class="form-control w-50" value="">
+           </form>
+                <button  type="submit">Adicionar</button>
         </div>
 
         
         <div class="card" id="card5" namne="card5">
-            <img src="Santosfiles/Hamburguer.jpg" alt="Cheddar" class="w-100">
-            <h2>X-Cheddar</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco5" data-preco="39,90">R$ 18,90</span> 
-            <form class="form-control  FazerPedido">
-                <span><input type="number" name="Quantity" id="Quantity5" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+             <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/Hamburguer.jpg" alt="Cheddar" class="w-100">
+                <h2>X-Cheddar</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco5" data-preco="39,90">R$ 18,90</span> 
+                <input type="number" name="Quantity" id="Quantity5" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                     <button  type="submit">Adicionar</button>
         </div>
 
             <div class="card" id="card6">
-            <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
-            <h2>hot-Dog</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco6" data-preco="39,90">R$ 18,90</span>    
-            <form class="form-control  FazerPedido">
-                <span><input type="number" name="Quantity" id="Quantity6" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+             <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
+                <h2>hot-Dog</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco6" data-preco="39,90">R$ 18,90</span> 
+                <input type="number" name="Quantity" id="Quantity6" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+            <button  type="submit">Adicionar</button>
         </div>
 
             <div class="card" id="card7">
-            <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
-            <h2>hot-Dog</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco7" data-preco="18,90">R$ 18,90</span>
-            <form class="form-control  FazerPedido">
-                <span><input type="number" name="Quantity" id="Quantity7" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
+                <h2>hot-Dog</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco7" data-preco="18,90">R$ 18,90</span>
+                <input type="number" name="Quantity" id="Quantity7" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button  type="submit">Adicionar</button>
         </div>
 
             <div class="card" id="card8">
-            <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
-            <h2>hot-Dog</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco9" data-preco="18,90">R$ 18,90</span> 
-            <form class="form-control  FazerPedido">
-                <span><input type="number" name="Quantity" id="Quantity8" min="0" placeholder="0" class="form-control w-50" value="0"></span>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
+                <h2>hot-Dog</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco9" data-preco="18,90">R$ 18,90</span> 
+                <input type="number" name="Quantity" id="Quantity8" min="0" placeholder="0" class="form-control w-50" value="0">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button type="submit">Adicionar</button>
         </div>
 
     </div>
@@ -177,72 +178,71 @@ Aqui, cada pedido é preparado no momento, garantindo sabor, qualidade e aquele 
     <div class="container-fluid ContainerCards d-none" data-aos="fade-up"  id="sessionP"> 
 
         <div class="card" id="card1" name="card1"> 
-            <img src="Santosfiles/dog.jpg" alt="Hambúrguer" class="w-100" id="img1">
-            <h2 name="c1" id="c1">X-Burger</h2>
-            <p>Pão, carne, queijo e molho especial.</p>
-            
-            <span id="Preco1" data-preco="24,90" class="Preco">R$ 24,90</span>
-            <form class="form-control  FazerPedido">
-                <span><input type="number" name="Quantity" id="Quantity9" min="0" placeholder="0" controls class="form-control w-50" value=""></span> 
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/dog.jpg" alt="Hambúrguer" class="w-100" id="img1">
+                <h2 name="c1" id="c1">X-Burger</h2>
+                <p>Pão, carne, queijo e molho especial.</p>
+                <span id="Preco1" data-preco="24,90" class="Preco">R$ 24,90</span>
+               <input type="number" name="Quantity" id="Quantity9" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button  type="submit">Adicionar</button>
         </div>
 
         <div class="card" id="card2">
-            <img src="Santosfiles/coxinha.jpg" alt="Coxinha" class="w-100">
-            <h2 name="c2" id="c2">COXINHA</h2>
-            <p>Massa crocante e muito recheio.</p>
-            <span name="Preco2" class="preco" data-preco="39,90">R$ 39,90</span>
-            <form class="form-control  FazerPedido">
-                <span><input type="number" name="Quantity" id="Quantity10" placeholder="0" min="0" controls class="form-control w-50" value=""></span> 
+             <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/coxinha.jpg" alt="Coxinha" class="w-100">
+                <h2 name="c2" id="c2">COXINHA</h2>
+                <p>Massa crocante e muito recheio.</p>
+                <span name="Preco2" class="preco" data-preco="39,90">R$ 39,90</span>
+                <input type="number" name="Quantity" id="Quantity10" placeholder="0" min="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button  type="submit">Adicionar</button>
         </div>
 
         <div class="card" id="card3">
-            <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
-            <h2>hot-Dog</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span id="Preco3" data-preco="39,90">R$ 18,90</span>
-            <form class="form-control  FazerPedido">
-                  <span><input type="number" name="Quantity" id="Quantity11" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
+                <h2>hot-Dog</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span id="Preco3" data-preco="39,90">R$ 18,90</span>
+                <input type="number" name="Quantity" id="Quantity11" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button type="submit">Adicionar</button>
         </div>
 
         
         <div class="card" id="card4">
-            <img src="Santosfiles/coxinha.jpg" alt="Hot Dog" class="w-100">
-            <h2>hot-Dog</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco4" data-preco="39,90">R$ 18,90</span>
-            <form class="form-control  FazerPedido">
-                 <span><input type="number" name="Quantity" id="Quantity12" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/coxinha.jpg" alt="Hot Dog" class="w-100">
+                <h2>hot-Dog</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco4" data-preco="39,90">R$ 18,90</span>
+                <input type="number" name="Quantity" id="Quantity12" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button  type="submit">Adicionar</button>
         </div>
 
         
         <div class="card" id="card5" namne="card5">
-            <img src="Santosfiles/coxinha.jpg" alt="Hot Dog" class="w-100">
-            <h2>hot-Dog</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco5" data-preco="39,90">R$ 18,90</span>
-            <form class="form-control  FazerPedido">
-                 <span><input type="number" name="Quantity" id="Quantity13" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/coxinha.jpg" alt="Hot Dog" class="w-100">
+                <h2>hot-Dog</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco5" data-preco="39,90">R$ 18,90</span>
+                <input type="number" name="Quantity" id="Quantity13" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button type="submit">Adicionar</button>
         </div>
 
             <div class="card" id="card6">
-            <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
-            <h2>hot-Dog</h2>
-            <p>Porção crocante e sequinha.</p>
-            <span name="Preco6" data-preco="39,90">R$ 18,90</span>
-            <form class="form-control  FazerPedido">
-                   <span><input type="number" name="Quantity" id="Quantity14" min="0" placeholder="0" controls class="form-control w-50" value=""></span>
+            <form class="form-control FazerPedido d-block" onsubmit= "event.preventDefault(); addToCart(this)" >
+                <img src="Santosfiles/dog.jpg" alt="Hot Dog" class="w-100">
+                <h2>hot-Dog</h2>
+                <p>Porção crocante e sequinha.</p>
+                <span name="Preco6" data-preco="39,90">R$ 18,90</span>
+                <input type="number" name="Quantity" id="Quantity14" min="0" placeholder="0" controls class="form-control w-50" value="">
             </form>
-            <button onclick="addToCart(this.parentNode)">Adicionar</button>
+                <button  type="submit">Adicionar</button>
         </div>
 </div>
 
