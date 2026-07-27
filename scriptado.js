@@ -312,7 +312,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
     }else{
         
     let Lanche = Arr.map(UserChoice => {
-        return `🍔 Produto: ${UserChoice.FoodName},%0A📝 Descrição: ${UserChoice.Description},%0A💲 Preço(UNI) : ${UserChoice.Price},%0A🔢 Quantidade: ${UserChoice.Quantity},%0A💵 Valor: ${UserChoice.Total.toFixed(1)} %0A %0A`;
+        return `🍔 Produto: ${UserChoice.FoodName},%0A📝 Descrição: ${UserChoice.Description},%0A💲 Preço(UNI) : ${UserChoice.Price},%0A🔢 Quantidade: ${UserChoice.Quantity},%0A💵 Valor: ${UserChoice.Total.toFixed(2)} %0A %0A`;
       });
       console.log(Lanche)
       console.log(Lanche.join('%0A'));
