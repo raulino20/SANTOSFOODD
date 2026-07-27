@@ -100,8 +100,8 @@ function CloseNav(){
  let i =''; 
   Arr.forEach(UserChoice => {
     
-    i += `Produto: ${UserChoice.FoodName},\n Descrição: ${UserChoice.Description}\n, Preço: ${UserChoice.Price}\n, Quantidade: ${UserChoice.Quantity}\n IMG ${UserChoice.ImgSrc} VALOOR:${UserChoice.Total.ToFixed(2)}\n`;
-    return i;
+    i += `Produto: ${UserChoice.FoodName},\n Descrição: ${UserChoice.Description}\n, Preço: ${UserChoice.Price}\n, Quantidade: ${UserChoice.Quantity}\n IMG ${UserChoice.ImgSrc} VALOOR:${UserChoice.Total.toFixed(2)}\n`;
+    return i; 
   }) 
 
    form.querySelector("input").value = ''
