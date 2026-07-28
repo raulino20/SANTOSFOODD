@@ -81,8 +81,29 @@ function CloseNav(){
 
 
     if (Quantity <= 0) {
+ let Requisity = document.createElement('div')  
+      Requisity.classList.add('alert', 'alert-warning')
+      Requisity.innerText =" Por favor, insira uma quantidade válida."
+    
+      Requisity.style.width = '100%'
+      Requisity.style.height = 'auto'
+      Requisity.style.marginTop ='5rem'
+      Requisity.style.display = 'block'
+      Requisity.style.textAlign = 'center'
+      Requisity.style.fontSize = '20px'
+      Requisity.style.position = 'fixed'
+      Requisity.style.top = '0'
+      Requisity.style.zIndex = '9999'
+    form.Quantity.classList.add('border', 'border-danger')
 
-        alert("Por favor, insira uma quantidade válida.");
+    document.body.appendChild(Requisity)
+
+      setTimeout(() => {
+        Requisity.remove()
+       form.Quantity.classList.remove('border', 'border-danger')
+
+      },2000)
+    
         return;
     }
      Quantity = parseFloat(Quantity)
