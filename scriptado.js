@@ -129,7 +129,7 @@ function CloseNav(){
   /// 
  //////////// PEDIDO DESCARTADO //////////////////////
 console.log(i)
-  let Choice = confirm(i);
+  let Choice = confirm(`${UserChoice.FoodName} Adicionar ao carrinho ? `);
   if(Choice === false ){
    Arr.pop(UserChoice)
     let Unsucess = document.createElement('div')
