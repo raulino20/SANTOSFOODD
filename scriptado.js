@@ -298,6 +298,8 @@ document.getElementById("iconFloat").addEventListener("click", function() {
         Card.appendChild(Img);
        
         Li.appendChild(LB);
+        LB.appendChild(Excluir)
+        Excluir.appendChild(XZINHO)
         Li.style.borderBottom ='2px solid rgb(180, 180, 180)'
         Li.style.marginBottom = '0.2rem'
         Li.appendChild(Card);
