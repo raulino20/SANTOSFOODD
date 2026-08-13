@@ -294,9 +294,27 @@ document.getElementById("iconFloat").addEventListener("click", function() {
         Li.style.marginBottom = '0.2rem'
         Li.appendChild(Card);
         Ul.appendChild(Li);
-    
-    });
 
+
+ Excluir.onclick = function(){
+  Li.remove(this.parentNode);
+
+ let ValorFim = ''
+  let TotalRemover = Arr.reduce((Soma,UserChoice) => {
+   Soma + (UserChoice.Price * UserChoice.Quantity)
+  ValorFim = Soma - Soma
+  return ValorFim
+},0)
+  console.log(ValorFim)
+  Arr.splice(TotalRemover, 1);
+  Indice.innerText = Arr.length
+  console.log(Arr)
+  
+  Valor.innerText = `TOTAL : R$ ${Arr.reduce((Soma,UserChoice) => {
+    return Soma + (UserChoice.Price * UserChoice.Quantity)
+    },0).toFixed(2)}`
+}
+  });
 
     Div.appendChild(Ul);
     
@@ -317,6 +335,7 @@ let Total = Arr.reduce((Soma,UserChoice) => {
 
   let Valor = document.createElement('h3')
   Valor.innerText = `TOTAL : R$ ${Total.toFixed(2)}` 
+  Valor.id='ValorTotal'
   Valor.style.marginTop='0.5rem'
   Valor.style.marginBottom = '0.5rem'
   Valor.style.marginLeft='1rem'
