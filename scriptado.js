@@ -258,7 +258,15 @@ document.getElementById("iconFloat").addEventListener("click", function() {
     Ul.classList.add('overflow-scroll')
 
     Arr.forEach(UserChoice => {
+        
+    let XZINHO = document.createElement('i')
+    XZINHO.classList.add('bi','bi-x')
 
+    let Excluir = document.createElement('button')
+    Excluir.classList.add('btn', 'btn-danger')
+    Excluir.type = 'button'
+
+        
         let Li = document.createElement("li");
         Li.classList.add("list-group-item");
         Li.style.display = "flex";
